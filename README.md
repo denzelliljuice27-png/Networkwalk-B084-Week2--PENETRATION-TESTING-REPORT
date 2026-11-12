@@ -6,19 +6,19 @@
 
 | Field | Detail |
 | --- | --- |
-| **Pentester Name (Cybersecurity Professional)** | **[YOUR FULL NAME]** |
-| **Program/Batch** | [YOUR BATCH, e.g. B0xx-Networkwalks] |
+| **Pentester Name (Cybersecurity Professional)** | **Denzel L Zimidzi** |
+| **Program/Batch** | B084M, Networkwalks |
 | **Date** | 12 November 2026 |
 | **Modules completed** | W2-PM1 (Footprinting with Multiple Kali Tools)<br>W2-PM2 (Footprinting with GHDB)<br>W2-PM3 (Footprinting with Maltego)<br>W2-PM4 (Footprinting with theHarvester)<br>W2-PM5 (Network Scanning with Zenmap) |
 | **Client/Target** | 1. Networkwalks (`networkwalks.com`, written permission secured)<br>2. `microsoft.com` (passive OSINT only, as assigned in the W2-PM4 lab guide)<br>3. My own local LAN network |
 | **Permission secured from client?** | Yes |
-| **Phases covered** | **Phase 1:** Reconnaissance & Footprinting<br>**Phase 2:** Scanning & Network Discovery<br>**Phase 3-5:** In Progress |
+| **Phases covered** | **Phase 1:** Reconnaissance & Footprinting<br>**Phase 2:** Scanning & Network Discovery<br>
 
 ---
 
 # 1. Liability Disclaimer
 
-I have performed these activities only on systems and devices where I had secured written permission, or on devices and systems that I own myself, or in the lab scope set by the course. All materials here are for education and research purposes only. Do not use anything from here to break the law. The instructor, the author and Networkwalks are not responsible for what you do with this knowledge. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
+I have performed these activities only on systems and devices where I had secured written permission, or on devices and systems that I own myself, or in the lab scope set by the course. All materials here are for education and research purposes only. Do not use anything from here to break the law. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
 
 ---
 
@@ -127,7 +127,7 @@ The Google Hacking Database (GHDB) on `exploit-db.com` is a collection of ready-
 
 | No. | Link (mask the last part of the IP, e.g. `122.116.41.x`) | Relevant Dork | Username / Password (if any) |
 | --- | --- | --- | --- |
-| 1 | [FILL IN] | [FILL IN] | --- |
+| 1 | http://122.116.41.8:8080/ | intitle:"webcamXP"inurl:8080  | --- |
 
 > **Ethics note:** I only recorded that a page was publicly reachable through Google. I did not log in, use default credentials, or control any device. Links to private devices are masked in this public report.
 
@@ -137,7 +137,7 @@ The Google Hacking Database (GHDB) on `exploit-db.com` is a collection of ready-
 
 | No. | Link | Relevant Dork | Username / Password (if any) |
 | --- | --- | --- | --- |
-| 1 | [FILL IN] | `intitle:index.of "parent directory" mathematics pdf` | --- |
+| 1 | intitle:"webcamXP"inurl:8080  | `intitle:index.of "parent directory" mathematics pdf` | --- |
 
 ### Why this matters
 
@@ -195,12 +195,11 @@ The very large host list shows how much of an organisation's infrastructure is d
 | Task | Requirement | My result |
 | --- | --- | --- |
 | 1 | Download & install Zenmap on a Windows PC | Installed (Nmap 7.993 / Zenmap) |
-| 2 | Find my local IP address and LAN subnet | [FILL IN from `ipconfig`] |
+| 2 | Find my local IP address and LAN subnet |IPv4 Address : 192.168.56.1,   Subnet Mask: 255.255.255.0|
 | 3 | Find the live hosts in my subnet | See below |
-| 4 | How many hosts are live? | [FILL IN] |
-| 5 | IP addresses of the live hosts | [FILL IN] |
-| 6 | MAC addresses of the live hosts | [FILL IN] (use `ipconfig /all` for my own PC) |
-| 7 | Save the topology as a PDF | [YES / NO] |
+| 4 | How many hosts are live? | 0 |
+| 5 | IP addresses of the live hosts |0 |
+| 6 | Save the topology as a PDF | YES  |
 
 ### First attempt: wrong subnet
 
@@ -218,13 +217,12 @@ The scan started at 21:01 (UTC+2) on 12 Nov 2026 and covered **256 IP addresses 
 
 | Item | Result |
 | --- | --- |
-| PC IP address & subnet mask (`ipconfig`) | [FILL IN] |
-| Command | `nmap -sn [YOUR-SUBNET]/24` |
-| Live hosts found | [FILL IN] |
-| Host IP / MAC list | [FILL IN] |
-| Topology PDF saved (Legend turned on) | [YES / NO] |
+| PC IP address & subnet mask (`ipconfig`) | 255.255.255.0 |
+| Command | `nmap -sn  255.255.255.0/24` |
+| Live hosts found | 0 |
+| Host IP / MAC list | none |
+| Topology PDF saved (Legend turned on) | YES  |
 
-I also need to answer the questions on the Networkwalks Zenmap practice lab page after completing these tasks.
 
 ---
 
